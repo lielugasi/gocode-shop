@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import Toggle from './components/Toggle/Toggle';
 import Products from './components/Products/Products';
 import Header from './components/Header/Header';
 
@@ -249,8 +250,9 @@ function App() {
   ];
   return (
     <div className="App">
-      <Header/>
-      <Products productsList={app} />
+      <Toggle/>
+      {/* <Header/>
+      <Products productsList={app} /> */}
     </div>
     
   );
