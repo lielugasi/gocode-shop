@@ -15,7 +15,7 @@ function App() {
       })
       .then((app) => {
         setApp(app);
-        setCategory(app);
+        setfilteredList(app);
       });
   }, []);
   // const app = [
@@ -287,8 +287,8 @@ function App() {
   //   },
   // ];
   const categories = app.map(p => p.category).filter((value, index, array) => array.indexOf(value)===index);
-  const [filteredList, setCategory] =useState(app);
-  const filterCategories= (category)=>{setCategory(app.filter((product)=>product.category===category))};
+  const [filteredList, setfilteredList] =useState(app);
+  const filterCategories= (category)=>{setfilteredList(app.filter((product)=>product.category===category))};
   return (
     
     <div className="App">

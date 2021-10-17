@@ -10,6 +10,7 @@ function Header({categories,onFilter}){
           <div className="collection-sort">
             <label>Filter by:</label>
             
+            
             <select onChange={(e)=>onFilter(e.target.value)}>
             {categories.map((category)=>(
               <option >{category}</option>))}
