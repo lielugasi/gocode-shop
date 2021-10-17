@@ -13,8 +13,6 @@ function Products({productsList}){
            
         ))}      
         
-        
-        
         {/* <Product/>
         <Product/>
         <Product/>

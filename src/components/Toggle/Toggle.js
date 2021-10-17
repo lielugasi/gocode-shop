@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export default function Toogle(){
-    const[ text, setText]=useState("Hello");
+    const[ text, setText]=useState(true);
 
     return (
         <div style={{padding:50}}>
